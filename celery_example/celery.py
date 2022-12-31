@@ -18,7 +18,7 @@ app.config_from_object('django.conf:settings', namespace='CELERY')
 # Load task modules from all registered Django apps.
 app.conf.beat_schedule = {
     'every-15-seconds':{
-        'tasks':'notifications.tasks.send_mail',
+        'task':'notifications.tasks.send_mail',
         'schedule':15,
         'args':('satish.raut777@gmail.com',)
     }
