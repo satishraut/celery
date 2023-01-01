@@ -20,7 +20,7 @@ app.conf.beat_schedule = {
     'every-15-seconds':{
         'task':'notifications.tasks.send_mail',
         'schedule':15,
-        'args':('satish.raut777@gmail.com',)
+        'args':('satish.raut777@gmail.com','this is sample message')
     }
 }
 app.autodiscover_tasks()
